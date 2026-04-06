@@ -1,11 +1,11 @@
 
-#define OVERSAMPLE_RATE 512 //Use the last 512 ADC values
+#define OVERSAMPLE_RATE 256 //Use the last 256 ADC values
 
 const int dt_us = 1000;
 
 uint16_t adc_buffer[OVERSAMPLE_RATE] = {0};
 uint32_t adc_sum = 0;
-uint16_t adc_average = 0;
+volatile uint16_t adc_average = 0;
 uint16_t index = 0;
 
 //Callback function for continuous ADC 
@@ -31,11 +31,13 @@ static bool IRAM_ATTR s_conv_done_cb(adc_continuous_handle_t handle, const adc_c
             adc_sum += sample;
 
             //update the index 
-            index = (index + 1) & (OVERSAMPLE_RATE -1); //raps around same thing as (index + 1) % 512
+            index = (index + 1) & (OVERSAMPLE_RATE -1); //wraps around same thing as (index + 1) % OVERSAMPLE_RATE
         }
 
     //compute average
-    adc_average = adc_sum / OVERSAMPLE_RATE; 
+    adc_average = adc_sum >> 8; //same as dividing by the OVERSAMPLE_RATE
+
+    return true; 
     
 }
 
@@ -57,7 +59,7 @@ void init_timer()
     gptimer_config_t timer_config = {
         .clk_src = GPTIMER_CLK_SRC_DEFAULT,
         .direction = GPTIMER_COUNT_UP,
-        .resolution_hz = dt_us, // 1 MHz -> 1 tick = 1 us
+        .resolution_hz = dt_us, 
     };
 
     ESP_ERROR_CHECK(gptimer_new_timer(&timer_config, &timer));
@@ -99,8 +101,8 @@ void app_main(void)
   adc_continuous_handle_t handle = NULL;
 
   adc_continuous_handle_cfg_t adc_config = {
-        .max_store_buf_size = 512,            //storage size in bytes
-        .conv_frame_size = 512,                //define the number of bytes to process at one time (frame)
+        .max_store_buf_size = 256,            //storage size in bytes
+        .conv_frame_size = 256,                //define the number of bytes to process at one time (frame)
     };
 
   adc_continuous_new_handle(&adc_config, &handle);
