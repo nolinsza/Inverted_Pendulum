@@ -85,6 +85,94 @@ damped responses before being implemented on the physical system.
   <em>Figure 4.3. Simulated Critically Damped Response</em>
 </p>
 
+## Embedded Implementation
+
+Figure 5 shows a general flowchart of the controller operating at a 100 Hz loop. The
+initialization period includes arming the ESCs and configuring hardware timers to operate
+the control loop and ADC oversampling.
+
+<p align="center">
+  <img width="700" alt="ESP32 Controller Flow Chart" src="<img width="603" height="741" alt="image" src="https://github.com/user-attachments/assets/86577202-d418-4590-b9ad-8bab447cb22d" />
+" />
+</p>
+
+<p align="center">
+  <em>Figure 5. ESP32 Controller Flow Chart</em>
+</p>
+
+### Sensor Processing
+
+The rotary potentiometer provides an analog voltage proportional to the pendulum angle.
+To reduce measurement noise, the ESP32 oversamples the ADC and averages 256 samples
+before converting the measurement to angular position.
+
+An exponential moving average filter with $\alpha = 0.15$ was applied to the measured
+angle to reduce noise amplification during angular velocity calculation.
+
+<p align="center">
+  <img width="475" alt="Raw vs. Filtered Angle" src="https://github.com/user-attachments/assets/d38246ff-0c2b-439c-8158-7dd8b2b47cd4" />
+</p>
+
+<p align="center">
+  <em>Figure 6.1. Raw vs. Filtered Angle</em>
+</p>
+
+<p align="center">
+  <img width="495" alt="Raw vs. Filtered Angular Velocity" src="https://github.com/user-attachments/assets/235f5c9a-39a7-49ee-9440-c087924f6dfc" />
+</p>
+
+<p align="center">
+  <em>Figure 6.2. Raw vs. Filtered Angular Velocity</em>
+</p>
+
+<p align="center">
+  <img width="477" alt="Raw vs. Filtered PWM Command" src="https://github.com/user-attachments/assets/1169797c-7033-46f6-bd5d-cf4e787e8b48" />
+</p>
+
+<p align="center">
+  <em>Figure 6.3. Raw vs. Filtered PWM Command</em>
+</p>
+
+## Results
+
+The completed system stabilizes indefinitely within approximately $\pm 3^\circ$ of the
+upright position and recovers from small external disturbances. The system also
+demonstrated underdamped, overdamped, and critically damped responses, with a measured
+settling time of 6.15 seconds for the critically damped response.
+
+<p align="center">
+  <img width="975" alt="Launch Sequence" src="https://github.com/user-attachments/assets/de7e48dd-1956-4156-9f1c-f826ba2eeb1e" />
+</p>
+
+<p align="center">
+  <em>Figure 7.1. Launch Sequence</em>
+</p>
+
+<p align="center">
+  <img width="975" alt="Underdamped Response" src="https://github.com/user-attachments/assets/6d3b96d6-7c7a-4cba-86e7-8c27c493450a" />
+</p>
+
+<p align="center">
+  <em>Figure 7.2. Underdamped Response</em>
+</p>
+
+<p align="center">
+  <img width="975" alt="Overdamped Response" src="https://github.com/user-attachments/assets/1791e43f-bef3-4792-96e1-8bd87b683df1" />
+</p>
+
+<p align="center">
+  <em>Figure 7.3. Overdamped Response</em>
+</p>
+
+<p align="center">
+  <img width="975" alt="Critically Damped Response" src="https://github.com/user-attachments/assets/76b0d117-4352-43ac-8b98-86b2c3b31216" />
+</p>
+
+<p align="center">
+  <em>Figure 7.4. Critically Damped Response</em>
+</p>
+
+
 
 
 
