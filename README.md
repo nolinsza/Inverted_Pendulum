@@ -4,7 +4,7 @@ This system was designed in collaboration by Nolin Szafranski and Foster Gilmore
 
 The project implements a real-time inverted pendulum stabilization system using an ESP32 microcontroller, rotary potentiometer feedback, and two brushless DC motors. A feedback controller continuously measures the pendulum angle and applies corrective thrust to maintain the pendulum in the upright position.
 
-## Youtube Demonstration
+## YouTube Demonstration
 
 1. Launch sequence — The pendulum is launched from approximately 60° and transitions into the critically damped operating condition
 2. Underdamped response — The pendulum is reset to approximately 20° and allowed to demonstrate an underdamped response.
