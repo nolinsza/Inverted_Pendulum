@@ -16,11 +16,11 @@ The project implements a real-time inverted pendulum stabilization system using 
 The inverted pendulum was modeled and simulated in State-Space where $u_f(t)$ is the applied corrective force.
 
 <p align="center">
-  <img width="400" alt="State Space Equation" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
+  <img width="500" alt="State Space Equation" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
 </p>
 
 <p align="center">
-  <img width="410" alt="Angle vs Time Plot" src="https://github.com/user-attachments/assets/66b97d64-fe49-4afd-bde8-877b8b35282f" />
+  <img width="500" alt="Angle vs Time Plot" src="https://github.com/user-attachments/assets/66b97d64-fe49-4afd-bde8-877b8b35282f" />
 </p>
 
 <p align="center">
@@ -39,7 +39,7 @@ relationship. The actuator response was also characterized with an estimated ave
 constant of 0.1815 s.
 
 <p align="center">
-  <img width="520" alt="System Modelling Framework" src="https://github.com/user-attachments/assets/fd01825c-2ec5-41a3-96d3-a1b442dedfe1" />
+  <img width="480" alt="System Modelling Framework" src="https://github.com/user-attachments/assets/fd01825c-2ec5-41a3-96d3-a1b442dedfe1" />
 </p>
 
 <p align="center">
@@ -52,7 +52,7 @@ The PD controller was tuned in simulation to produce underdamped, overdamped, an
 damped responses before being implemented on the physical system.
 
 <p align="center">
-  <img width="975" alt="PD Control Block Diagram" src="https://github.com/user-attachments/assets/bffc5729-aa2e-4578-a7d1-b4e84103115a" />
+  <img width="600" alt="PD Control Block Diagram" src="https://github.com/user-attachments/assets/bffc5729-aa2e-4578-a7d1-b4e84103115a" />
 </p>
 
 <p align="center">
@@ -60,7 +60,7 @@ damped responses before being implemented on the physical system.
 </p>
 
 <p align="center">
-  <img width="620" alt="Simulated Underdamped Response" src="https://github.com/user-attachments/assets/02acdf2a-b732-4d58-8108-9ca0366ef33f" />
+  <img width="500" alt="Simulated Underdamped Response" src="https://github.com/user-attachments/assets/02acdf2a-b732-4d58-8108-9ca0366ef33f" />
 </p>
 
 <p align="center">
@@ -68,7 +68,7 @@ damped responses before being implemented on the physical system.
 </p>
 
 <p align="center">
-  <img width="575" alt="Simulated Overdamped Response" src="https://github.com/user-attachments/assets/7caf8ce2-2195-43a8-aabb-aec74ee9ccd8" />
+  <img width="500" alt="Simulated Overdamped Response" src="https://github.com/user-attachments/assets/7caf8ce2-2195-43a8-aabb-aec74ee9ccd8" />
 </p>
 
 <p align="center">
@@ -76,7 +76,7 @@ damped responses before being implemented on the physical system.
 </p>
 
 <p align="center">
-  <img width="580" alt="Simulated Critically Damped Response" src="https://github.com/user-attachments/assets/a89a61c4-a8c6-43be-bdf6-599b1d7f1438" />
+  <img width="500" alt="Simulated Critically Damped Response" src="https://github.com/user-attachments/assets/a89a61c4-a8c6-43be-bdf6-599b1d7f1438" />
 </p>
 
 <p align="center">
