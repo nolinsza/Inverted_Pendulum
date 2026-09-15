@@ -56,8 +56,10 @@ damped responses before being implemented on the physical system.
 </p>
 
 <p align="center">
-  <em>Figure 4. PD Control Block Diagram</em>
+  <em>Figure 3. PD Control Block Diagram</em>
 </p>
+
+
 
 <p align="center">
   <img width="500" alt="Simulated Underdamped Response" src="https://github.com/user-attachments/assets/02acdf2a-b732-4d58-8108-9ca0366ef33f" />
