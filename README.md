@@ -15,10 +15,11 @@ The project implements a real-time inverted pendulum stabilization system using 
 
 The inverted pendulum was modeled and simulated in State-Space where uf(t) is the applied corrective force.
 
-### State-Space Model
+
 <img width="641" height="137" alt="image" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
 
 <img width="819" height="543" alt="image" src="https://github.com/user-attachments/assets/66b97d64-fe49-4afd-bde8-877b8b35282f" />
+
 Figure 2. θ(t) from MATLAB Simulation 
 
 
