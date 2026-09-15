@@ -13,67 +13,17 @@ The project implements a real-time inverted pendulum stabilization system using 
 
 ##  Mathematical Model
 
-The inverted pendulum was modeled using the free-body diagram shown below
+The inverted pendulum was modeled using the free-body diagram shown below where uf(t) is the applied stabilization force. 
 
 <img width="316" height="406" alt="image" src="https://github.com/user-attachments/assets/3294de9d-ebbd-4c08-9bb9-558d4ab1607c" />
 Figure 1. Inverted Pendulum Free Body Diagram 
 
 ### State-Space Model
+<img width="641" height="137" alt="image" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
 
-Defining the system states as:
+<img width="819" height="543" alt="image" src="https://github.com/user-attachments/assets/66b97d64-fe49-4afd-bde8-877b8b35282f" />
+Figure 2. θ(t) from MATLAB Simulation 
 
-$$
-x_1 = \theta
-$$
 
-$$
-x_2 = \dot{\theta}
-$$
-
-with:
-
-$$
-\dot{x}_1 = x_2
-$$
-
-and
-
-$$
-\dot{x}_2 = \ddot{\theta}
-$$
-
-the linearized system can be represented in state-space form as:
-
-$$
-\dot{x}
-=
-\begin{bmatrix}
-\dot{x}_1 \\
-\dot{x}_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 & 1 \\
-\frac{g}{l} & 0
-\end{bmatrix}
-x
-+
-\begin{bmatrix}
-0 \\
--\frac{1}{ml}
-\end{bmatrix}
-u_f(t)
-$$
-
-where:
-
-- $x_1$ is the pendulum angle
-- $x_2$ is the angular velocity
-- $u_f(t)$ is the applied control force
-- $m$ is the pendulum mass
-- $l$ is the pendulum length
-- $g$ is the gravitational acceleration
-
-This model was implemented in MATLAB to simulate the system response and determine appropriate controller gains.
 
 
