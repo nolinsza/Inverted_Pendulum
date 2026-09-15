@@ -39,11 +39,11 @@ relationship. The actuator response was also characterized with an estimated ave
 constant of 0.1815 s.
 
 <p align="center">
-  <img width="480" alt="System Modelling Framework" src="https://github.com/user-attachments/assets/fd01825c-2ec5-41a3-96d3-a1b442dedfe1" />
+  <img width="300" alt="System Modelling Framework" src="https://github.com/user-attachments/assets/fd01825c-2ec5-41a3-96d3-a1b442dedfe1" />
 </p>
 
 <p align="center">
-  <em>Figure 3. System Modelling Framework</em>
+  <em>Figure 2. System Modelling Framework</em>
 </p>
 
 ## Controller Design
@@ -64,7 +64,7 @@ damped responses before being implemented on the physical system.
 </p>
 
 <p align="center">
-  <em>Figure 5.1. Simulated Underdamped Response</em>
+  <em>Figure 4.1. Simulated Underdamped Response</em>
 </p>
 
 <p align="center">
@@ -72,7 +72,7 @@ damped responses before being implemented on the physical system.
 </p>
 
 <p align="center">
-  <em>Figure 5.2. Simulated Overdamped Response</em>
+  <em>Figure 4.2. Simulated Overdamped Response</em>
 </p>
 
 <p align="center">
@@ -80,7 +80,7 @@ damped responses before being implemented on the physical system.
 </p>
 
 <p align="center">
-  <em>Figure 5.3. Simulated Critically Damped Response</em>
+  <em>Figure 4.3. Simulated Critically Damped Response</em>
 </p>
 
 
