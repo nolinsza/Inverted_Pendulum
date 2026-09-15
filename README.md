@@ -11,19 +11,24 @@ The project implements a real-time inverted pendulum stabilization system using 
 3. Overdamped response — The pendulum is reset to approximately 20° and demonstrates an overdamped response.
 4. Critically damped response — The pendulum is returned to approximately 20° and demonstrates the final critically damped response.
 
-##  Mathematical Model
+## Mathematical Model
 
-The inverted pendulum was modeled and simulated in State-Space where uf(t) is the applied corrective force.
+The inverted pendulum was modeled and simulated in State-Space where $u_f(t)$ is the applied corrective force.
 
+<p align="center">
+  <img width="320" alt="State Space Equation" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
+</p>
 
-<img width="320.5" height="68.5" alt="image" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
+<p align="center">
+  <img width="410" alt="Angle vs Time Plot" src="https://github.com/user-attachments/assets/66b97d64-fe49-4afd-bde8-877b8b35282f" />
+</p>
 
-
-
-<img width="409.5" height="271.5" alt="image" src="https://github.com/user-attachments/assets/66b97d64-fe49-4afd-bde8-877b8b35282f" />
-Figure 1. θ(t) from MATLAB Simulation 
+<p align="center">
+  <em>Figure 1. θ(t) from MATLAB Simulation</em>
+</p>
 
 ## System Characterization
+
 
 The mathematical model assumes a directly applied force, while the physical system is
 controlled through motor PWM. Experimental testing was therefore performed to characterize
