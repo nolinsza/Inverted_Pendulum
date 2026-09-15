@@ -92,7 +92,7 @@ initialization period includes arming the ESCs and configuring hardware timers t
 the control loop and ADC oversampling.
 
 <p align="center">
-  <img width="600" alt="ESP32 Controller Flow Chart" src="https://github.com/user-attachments/assets/86577202-d418-4590-b9ad-8bab447cb22d" />
+  <img width="450" alt="ESP32 Controller Flow Chart" src="https://github.com/user-attachments/assets/86577202-d418-4590-b9ad-8bab447cb22d" />
 </p>
 
 <p align="center">
@@ -109,7 +109,7 @@ An exponential moving average filter with $\alpha = 0.15$ was applied to the mea
 angle to reduce noise amplification during angular velocity calculation.
 
 <p align="center">
-  <img width="475" alt="Raw vs. Filtered Angle" src="https://github.com/user-attachments/assets/d38246ff-0c2b-439c-8158-7dd8b2b47cd4" />
+  <img width="425" alt="Raw vs. Filtered Angle" src="https://github.com/user-attachments/assets/d38246ff-0c2b-439c-8158-7dd8b2b47cd4" />
 </p>
 
 <p align="center">
@@ -117,7 +117,7 @@ angle to reduce noise amplification during angular velocity calculation.
 </p>
 
 <p align="center">
-  <img width="495" alt="Raw vs. Filtered Angular Velocity" src="https://github.com/user-attachments/assets/235f5c9a-39a7-49ee-9440-0c87924f6dfc" />
+  <img width="425" alt="Raw vs. Filtered Angular Velocity" src="https://github.com/user-attachments/assets/235f5c9a-39a7-49ee-9440-0c87924f6dfc" />
 </p>
 
 <p align="center">
@@ -125,7 +125,7 @@ angle to reduce noise amplification during angular velocity calculation.
 </p>
 
 <p align="center">
-  <img width="477" alt="Raw vs. Filtered PWM Command" src="https://github.com/user-attachments/assets/1169797c-7033-46f6-bd5d-cf4e787e8b48" />
+  <img width="425" alt="Raw vs. Filtered PWM Command" src="https://github.com/user-attachments/assets/1169797c-7033-46f6-bd5d-cf4e787e8b48" />
 </p>
 
 <p align="center">
