@@ -13,10 +13,7 @@ The project implements a real-time inverted pendulum stabilization system using 
 
 ##  Mathematical Model
 
-The inverted pendulum was modeled using the free-body diagram shown below where uf(t) is the applied stabilization force. 
-
-<img width="316" height="406" alt="image" src="https://github.com/user-attachments/assets/3294de9d-ebbd-4c08-9bb9-558d4ab1607c" />
-Figure 1. Inverted Pendulum Free Body Diagram 
+The inverted pendulum was modeled and simulated in State-Space where uf(t) is the applied corrective force.
 
 ### State-Space Model
 <img width="641" height="137" alt="image" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
