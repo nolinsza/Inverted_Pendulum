@@ -92,8 +92,7 @@ initialization period includes arming the ESCs and configuring hardware timers t
 the control loop and ADC oversampling.
 
 <p align="center">
-  <img width="700" alt="ESP32 Controller Flow Chart" src="<img width="603" height="741" alt="image" src="https://github.com/user-attachments/assets/86577202-d418-4590-b9ad-8bab447cb22d" />
-" />
+  <img width="600" alt="ESP32 Controller Flow Chart" src="https://github.com/user-attachments/assets/86577202-d418-4590-b9ad-8bab447cb22d" />
 </p>
 
 <p align="center">
@@ -118,7 +117,7 @@ angle to reduce noise amplification during angular velocity calculation.
 </p>
 
 <p align="center">
-  <img width="495" alt="Raw vs. Filtered Angular Velocity" src="https://github.com/user-attachments/assets/235f5c9a-39a7-49ee-9440-c087924f6dfc" />
+  <img width="495" alt="Raw vs. Filtered Angular Velocity" src="https://github.com/user-attachments/assets/235f5c9a-39a7-49ee-9440-0c87924f6dfc" />
 </p>
 
 <p align="center">
@@ -171,9 +170,3 @@ settling time of 6.15 seconds for the critically damped response.
 <p align="center">
   <em>Figure 7.4. Critically Damped Response</em>
 </p>
-
-
-
-
-
-
