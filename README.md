@@ -6,6 +6,8 @@ The project implements a real-time inverted pendulum stabilization system using 
 
 ## YouTube Demonstration
 
+[![Inverted Pendulum Demonstration](https://img.youtube.com/vi/CT1KjtFzzcA/maxresdefault.jpg)](https://www.youtube.com/watch?v=CT1KjtFzzcA)
+
 1. Launch sequence — The pendulum is launched from approximately 60° and transitions into the critically damped operating condition
 2. Underdamped response — The pendulum is reset to approximately 20° and allowed to demonstrate an underdamped response.
 3. Overdamped response — The pendulum is reset to approximately 20° and demonstrates an overdamped response.
