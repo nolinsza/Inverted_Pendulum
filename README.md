@@ -16,7 +16,7 @@ The project implements a real-time inverted pendulum stabilization system using 
 The inverted pendulum was modeled and simulated in State-Space where $u_f(t)$ is the applied corrective force.
 
 <p align="center">
-  <img width="320" alt="State Space Equation" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
+  <img width="400" alt="State Space Equation" src="https://github.com/user-attachments/assets/caac17b2-3d18-4b89-acc1-c97115f8e267" />
 </p>
 
 <p align="center">
